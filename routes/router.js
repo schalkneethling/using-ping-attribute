@@ -10,6 +10,7 @@ router.get("/pinged", (req, res) => {
 });
 
 router.post("/ping", (req, res) => {
+  console.log(req);
   console.log(`origin: ${req.get("ping-from")}`);
   console.log(`destination: ${req.get("ping-to")}`);
 });
